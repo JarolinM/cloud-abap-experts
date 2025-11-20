@@ -27,26 +27,33 @@ CLASS zcl_04_company_4362 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_04_company_4362 IMPLEMENTATION.
+
+
+CLASS ZCL_04_COMPANY_4362 IMPLEMENTATION.
+
+
   METHOD get_company_code.
     ev_company_code = me->company_code.
   ENDMETHOD.
 
+
   METHOD get_currency.
     ev_currency = me->currency.
   ENDMETHOD.
+
 
   METHOD set_company_code.
      me->company_code = iv_company_code.
 
   ENDMETHOD.
 
+
   METHOD set_currency.
     me->currency = iv_currency.
   ENDMETHOD.
 
+
   METHOD constructor.
     me->quotation = iv_quotation.
   ENDMETHOD.
-
 ENDCLASS.

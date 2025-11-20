@@ -8,7 +8,12 @@ CLASS zcl_01_exec_inheriting_4362 DEFINITION
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
-CLASS zcl_01_exec_inheriting_4362 IMPLEMENTATION.
+
+
+
+CLASS ZCL_01_EXEC_INHERITING_4362 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
 *    "Create object each one class
@@ -70,5 +75,4 @@ CLASS zcl_01_exec_inheriting_4362 IMPLEMENTATION.
 
 
   ENDMETHOD.
-
 ENDCLASS.

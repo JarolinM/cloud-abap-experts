@@ -1,0 +1,22 @@
+CLASS zlc_12_storage_location_4263 DEFINITION
+  PUBLIC
+  "FINAL
+  CREATE PUBLIC
+  GLOBAL FRIENDS zcl_11_citizen_4263.
+
+  PUBLIC SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+  data products type string.
+  METHODS set_product IMPORTING iv_product type string.
+ENDCLASS.
+
+
+
+CLASS ZLC_12_STORAGE_LOCATION_4263 IMPLEMENTATION.
+
+
+  METHOD set_product.
+
+  ENDMETHOD.
+ENDCLASS.

@@ -1,0 +1,15 @@
+managed implementation in class zbp_i_prod_x_indic unique;
+strict ( 2 );
+
+define behavior for ZI_PROD_X_INDIC alias IngresoBascula
+persistent table zprod_x_indic
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly, numbering : managed  ) IdReg;
+  field( readonly ) Fecha, Indicador;
+}

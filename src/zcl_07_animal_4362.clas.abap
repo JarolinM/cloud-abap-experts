@@ -11,9 +11,10 @@ ENDCLASS.
 
 
 
-CLASS zcl_07_animal_4362 IMPLEMENTATION.
+CLASS ZCL_07_ANIMAL_4362 IMPLEMENTATION.
+
+
   METHOD walk.
     rv_walk = 'Animal walk'.
   ENDMETHOD.
-
 ENDCLASS.

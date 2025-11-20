@@ -14,7 +14,12 @@ CLASS zcl_lab_08_work_record_4263 DEFINITION
                 last_name  TYPE string,
                 surname    TYPE string.
 ENDCLASS.
-CLASS zcl_lab_08_work_record_4263 IMPLEMENTATION.
+
+
+
+CLASS ZCL_LAB_08_WORK_RECORD_4263 IMPLEMENTATION.
+
+
   METHOD open_new_record.
 
     date = iv_date.
@@ -23,5 +28,4 @@ CLASS zcl_lab_08_work_record_4263 IMPLEMENTATION.
     surname = iv_surname.
 
   ENDMETHOD.
-
 ENDCLASS.

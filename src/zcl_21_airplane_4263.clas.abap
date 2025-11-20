@@ -1,0 +1,15 @@
+CLASS zcl_21_airplane_4263 DEFINITION ABSTRACT
+  PUBLIC
+  "FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+  METHODS airplane_type ABSTRACT returning value(rv_airplane_type) type string.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_21_airplane_4263 IMPLEMENTATION.
+ENDCLASS.

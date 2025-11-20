@@ -25,21 +25,27 @@ CLASS zcl_lab_02_product_4362 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_lab_02_product_4362 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_02_PRODUCT_4362 IMPLEMENTATION.
+
+
   METHOD set_product.
     product = i_product.
   ENDMETHOD.
+
 
   METHOD set_creation_date.
     creation_date = i_creation_date.
   ENDMETHOD.
 
+
   METHOD get_product.
     r_product = product.
   ENDMETHOD.
 
+
   METHOD get_creation_date.
     r_creation_date = creation_date.
   ENDMETHOD.
-
 ENDCLASS.

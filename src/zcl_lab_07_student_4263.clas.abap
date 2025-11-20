@@ -13,10 +13,13 @@ CLASS zcl_lab_07_student_4263 DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_lab_07_student_4263 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_07_STUDENT_4263 IMPLEMENTATION.
+
+
   METHOD set_birth_date.
     birth_date = iv_birth_date.
     rv_birth_date = birth_date.
   ENDMETHOD.
-
 ENDCLASS.

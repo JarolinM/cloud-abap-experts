@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_01_exec_4362 IMPLEMENTATION.
+CLASS ZCL_01_EXEC_4362 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     "data lo_contract type REF TO zcl_01_exec_4362.
@@ -84,5 +86,4 @@ CLASS zcl_01_exec_4362 IMPLEMENTATION.
 
 
   ENDMETHOD.
-
 ENDCLASS.

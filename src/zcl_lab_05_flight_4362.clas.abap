@@ -10,7 +10,11 @@ CLASS zcl_lab_05_flight_4362 DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_lab_05_flight_4362 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_05_FLIGHT_4362 IMPLEMENTATION.
+
+
   METHOD get_check_flight.
 
     "creamos una variable
@@ -32,5 +36,4 @@ CLASS zcl_lab_05_flight_4362 IMPLEMENTATION.
     ENDIF.
 
   ENDMETHOD.
-
 ENDCLASS.

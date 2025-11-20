@@ -1,0 +1,6 @@
+INTERFACE zif_06_group_4362
+  PUBLIC .
+
+  METHODS set_gruop.
+
+ENDINTERFACE.

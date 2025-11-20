@@ -15,13 +15,15 @@ ENDCLASS.
 
 
 
-CLASS zcl_03_employee_4362 IMPLEMENTATION.
+CLASS ZCL_03_EMPLOYEE_4362 IMPLEMENTATION.
+
+
   METHOD constructor.
     me->employe_id = iv_employe_id.
   ENDMETHOD.
 
+
   METHOD get_employee_id.
     rv_employe_id = me->employe_id.
   ENDMETHOD.
-
 ENDCLASS.

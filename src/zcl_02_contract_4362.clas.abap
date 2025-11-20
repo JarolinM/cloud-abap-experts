@@ -59,7 +59,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_02_contract_4362 IMPLEMENTATION.
+CLASS ZCL_02_CONTRACT_4362 IMPLEMENTATION.
+
 
   METHOD set_client.
     client = iv_client.
@@ -67,19 +68,23 @@ CLASS zcl_02_contract_4362 IMPLEMENTATION.
     cv_process = 'Started'.
   ENDMETHOD.
 
+
   METHOD get_client.
 
     ev_client = client.
 
   ENDMETHOD.
 
+
   METHOD get_cntr_type.
     ev_cntr_type = cntr_type.
   ENDMETHOD.
 
+
   METHOD set_cntr_type.
     cntr_type = iv_cntr_type.
   ENDMETHOD.
+
 
   METHOD get_client_name.
 
@@ -94,12 +99,13 @@ CLASS zcl_02_contract_4362 IMPLEMENTATION.
 
   ENDMETHOD.
 
+
   METHOD set_address.
 
   ENDMETHOD.
 
+
   METHOD get_instance.
         er_instance = new zcl_02_contract_4362(  ).
   ENDMETHOD.
-
 ENDCLASS.

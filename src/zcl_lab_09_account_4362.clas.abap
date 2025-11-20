@@ -13,13 +13,17 @@ CLASS zcl_lab_09_account_4362 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_lab_09_account_4362 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_09_ACCOUNT_4362 IMPLEMENTATION.
+
+
   METHOD get_account.
     rv_iban = me->iban.
   ENDMETHOD.
 
+
   METHOD set_account.
     me->iban = iv_iban.
   ENDMETHOD.
-
 ENDCLASS.

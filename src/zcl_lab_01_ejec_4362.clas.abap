@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_lab_01_ejec_4362 IMPLEMENTATION.
+CLASS ZCL_LAB_01_EJEC_4362 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     DATA(lo_product) = NEW zcl_lab_02_product_4362(  ).
@@ -109,5 +111,4 @@ CLASS zcl_lab_01_ejec_4362 IMPLEMENTATION.
       ) ).
 
   ENDMETHOD.
-
 ENDCLASS.

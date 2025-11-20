@@ -1,0 +1,9 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_PROD_X_INDIC alias IngresoBascula
+{
+  use create;
+  use update;
+  use delete;
+}

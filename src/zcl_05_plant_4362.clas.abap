@@ -18,7 +18,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_05_plant_4362 IMPLEMENTATION.
+CLASS ZCL_05_PLANT_4362 IMPLEMENTATION.
+
+
   METHOD constructor.
 
     super->constructor( iv_quotation = iv_quotation ).
@@ -27,10 +29,10 @@ CLASS zcl_05_plant_4362 IMPLEMENTATION.
 
   ENDMETHOD.
 
+
   METHOD set_company_code.
 
     super->set_company_code( iv_company_code = iv_company_code ).
     me->company_code = 'ABCD'.
   ENDMETHOD.
-
 ENDCLASS.

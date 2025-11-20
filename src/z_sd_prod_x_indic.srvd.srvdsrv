@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service expose ZC_PROD_X_INDC'
+define service Z_SD_PROD_X_INDIC {
+  expose ZC_PROD_X_INDIC as PesoBascula;
+}

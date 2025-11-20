@@ -34,7 +34,11 @@ CLASS zcl_lab_06_elements_4362 DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_lab_06_elements_4362 IMPLEMENTATION.
+
+
+CLASS ZCL_LAB_06_ELEMENTS_4362 IMPLEMENTATION.
+
+
   METHOD set_object.
 *        Creo la implementacion del metodo y uso el atributo ms_object de tipo ty_elements_objets.
 *        Este metodo recibe 3 parametros y asigna los valores al atributo ms_objects.
