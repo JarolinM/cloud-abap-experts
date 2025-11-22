@@ -17,5 +17,5 @@ define view entity zi_cds_14
 {
   key travel_id                                               as TravelId,
       Travel.agency_id                                        as AgencyId,
-      _Agency( pCountryCode: $parameters.pCountryCode2 ).Name as AgencyName
+      _Agency( pCountryCode: $parameters.pCountryCode2  )[City = 'Chicago'].Name as AgencyName
 }

@@ -3,15 +3,11 @@
 {
 "FROM":
 [
-"/DMO/CUSTOMER",
+"I_CURRENCYTEXT",
 "/DMO/TRAVEL"
 ],
 "ASSOCIATED":
-[
-"/DMO/AGENCY",
-"/DMO/BOOKING",
-"/DMO/CUSTOMER"
-],
+[],
 "BASE":
 [],
 "ANNO_REF":

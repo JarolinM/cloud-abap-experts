@@ -1,26 +1,16 @@
 @AbapCatalog.viewEnhancementCategory: [#NONE]
 @AccessControl.authorizationCheck: #NOT_REQUIRED
-@EndUserText.label: 'Association - with Parameners'
+@EndUserText.label: 'Associantion'
 @Metadata.ignorePropagatedAnnotations: true
-@ObjectModel.usageType:{
- serviceQuality: #X,
- sizeCategory: #S,
- dataClass: #MIXED
-}
-define view entity ZI_CDS_15
+define view entity ZI_CDS_17
   as select from /dmo/travel as Travel
 
   association [1..1] to /dmo/customer as _Customer on _Customer.customer_id = $projection.CustomerId
   association [1..1] to /dmo/agency   as _Agency   on _Agency.agency_id = $projection.AgencyId
-  association [0..*] to /dmo/booking  as _Booking  on _Booking.travel_id = $projection.TravelId
 {
   key Travel.travel_id                                                  as TravelId,
       Travel.customer_id                                                as CustomerId,
-      concat_with_space ( _Customer.first_name, _Customer.last_name, 2) as CustomerName,
+      concat_with_space ( _Customer[inner].first_name, _Customer[inner].last_name, 2) as CustomerName,
       Travel.agency_id                                                  as AgencyId,
-      _Customer.city                                                    as City,
-      _Agency,
-      _Customer,
-      _Booking
-
+      _Agency[inner].agency_id                                                 as AgencyName
 }

@@ -3,14 +3,11 @@
 {
 "FROM":
 [
-"/DMO/CUSTOMER",
-"/DMO/TRAVEL"
+"/DMO/BOOKING"
 ],
 "ASSOCIATED":
 [
-"/DMO/AGENCY",
-"/DMO/BOOKING",
-"/DMO/CUSTOMER"
+"ZI_CDS_18"
 ],
 "BASE":
 [],
