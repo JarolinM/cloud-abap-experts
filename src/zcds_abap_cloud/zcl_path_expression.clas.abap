@@ -14,6 +14,10 @@ ENDCLASS.
 CLASS zcl_path_expression IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
 
+DATA LT_ABSTRACT TYPE TABLE OF zi_cds_21.
+
+OUT->WRITE( '' ).
+
     SELECT FROM zi_cds_19 AS booking
            FIELDS booking~TravelId,
                   booking~BookingId,
