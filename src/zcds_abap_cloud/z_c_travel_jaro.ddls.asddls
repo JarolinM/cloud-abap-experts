@@ -4,7 +4,7 @@
 
 
 @Search.searchable: true
-
+@Metadata.allowExtensions: true
 define root view entity Z_C_TRAVEL_JARO
   provider contract transactional_query
   as projection on Z_R_TRAVEL_JARO
@@ -33,7 +33,8 @@ define root view entity Z_C_TRAVEL_JARO
       TotalPrice,
       CurrencyCode,
       Description,
-
+      
+      @ObjectModel.text.element: [ 'OverallStatusText' ]    
       OverallStatus,
       _OverallStatus._Text.Text as OverallStatusText : localized,
       //_OverallStatus._Text[1: Language = $session.system_language].Text as OverallStatusText,

@@ -1,0 +1,119 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Travel',
+                     typeNamePlural: 'Travels',
+                     title: { type: #STANDARD,
+                              value: 'TravelID' } },
+      presentationVariant: [{ sortOrder: [ { by : 'TravelID',
+                              direction: #DESC } ],
+                              visualizations: [{ type: #AS_LINEITEM }] } ]
+
+}
+annotate entity Z_C_TRAVEL_JARO with
+{
+  @UI.facet: [ { id:  'TravelMasterData',
+                 purpose: #STANDARD,
+                 type: #IDENTIFICATION_REFERENCE,
+                 label: 'Travel Master Data',
+                 position: 10 } ]
+  @UI.hidden: true
+  TravelUUID;
+
+  @UI: { lineItem:   [ { position: 10,
+                         importance: #HIGH,
+                         label: 'Travel ID'
+                        },
+                        { type: #FOR_ACTION ,
+                          dataAction: 'acceptTravel',
+                          position: 10,
+                          label: 'Accept Travel' },
+                        { type: #FOR_ACTION ,
+                          dataAction: 'rejectTravel',
+                          position: 20,
+                          label: 'Reject Travel' },
+                        { type: #FOR_ACTION ,
+                          dataAction: 'deductDiscount',
+                          position: 30,
+                          label: 'Discount' } ],
+         selectionField: [ { position:10 } ],
+         identification: [ { position:10 },
+                           {  type: #FOR_ACTION ,
+                              dataAction: 'acceptTravel',
+                              position: 10,
+                              label: 'Accept Travel' },
+                            { type: #FOR_ACTION ,
+                              dataAction: 'rejectTravel',
+                              position: 20,
+                              label: 'Reject Travel' },
+                            { type: #FOR_ACTION ,
+                              dataAction: 'deductDiscount',
+                              position: 30,
+                              label: 'Discount' } ] }
+  TravelID;
+
+  @Consumption.valueHelpDefinition: [ { entity: { name : '/DMO/I_Agency_StdVH',
+                                                         element : 'AgencyID' },
+                                                  useForValidation: true } ]
+  @UI: { lineItem: [ { position: 20,
+                    importance: #HIGH  }  ],
+         selectionField: [ { position: 20 } ],
+         identification: [ { position: 20 } ] }
+  AgencyID;
+
+  @UI: { lineItem: [ { position: 30,
+                   importance: #HIGH }  ],
+         selectionField: [ { position: 30  } ],
+         identification: [ { position:30 } ] }
+  CustomerID;
+
+  @UI: { lineItem: [ { position: 40,
+                   importance: #MEDIUM  } ],
+                   identification: [ { position: 40 } ] }
+  BeginDate;
+
+  @UI.lineItem: [ { position: 50,
+                   importance: #MEDIUM }  ]
+  @UI.identification: [ { position: 50 } ]
+  EndDate;
+
+  @UI.lineItem: [ { position: 60,
+                    importance: #LOW  } ]
+  @UI.identification: [ { position: 60 } ]
+  BookingFee;
+
+  @UI.lineItem: [ { position: 70,
+                  importance: #HIGH } ]
+  @UI.identification: [ { position: 70 } ]
+  TotalPrice;
+
+  @Consumption.valueHelpDefinition: [ { entity: { name : 'I_CurrencyStdVH',
+                                                        element : 'Currency' },
+                                                 useForValidation: true } ]
+  @UI.lineItem: [ { position: 80,
+                  importance: #HIGH } ]
+  @UI.identification: [ { position: 80 } ]
+  CurrencyCode;
+
+  @Consumption.valueHelpDefinition: [ { entity: { name : '/DMO/I_Overall_Status_VH',
+                                                        element : 'OverallStatus' } } ]
+  @UI: { lineItem: [ { position: 90,
+                  importance: #HIGH } ],
+          selectionField: [ { position: 40 } ],
+          textArrangement: #TEXT_ONLY,
+          identification: [ { position: 50 } ]
+          }
+  OverallStatus;
+
+  @UI.hidden: true
+  OverallStatusText;
+
+  @UI.hidden: true
+  LastChangedAt;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+
+
+
+
+
+}
