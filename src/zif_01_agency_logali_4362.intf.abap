@@ -1,11 +1,4 @@
-INTERFACE zif_01_agency_logali_4362
-  PUBLIC.
+interface ZIF_01_AGENCY_LOGALI_4362
+  public .
 
-  methods: set_name importing iv_type type string,
-           get_name returning value(rv_type) type string.
-
-  class-methods set_Address importing iv_address type string.
-
-   class-data agency_address type string.
-
-ENDINTERFACE.
+endinterface.

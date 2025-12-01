@@ -1,4 +1,4 @@
-INTERFACE zif_08_co_company_4263
-  PUBLIC .
-    methods define_company returning value(rv_company) type string.
-ENDINTERFACE.
+interface ZIF_08_CO_COMPANY_4263
+  public .
+
+endinterface.

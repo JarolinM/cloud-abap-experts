@@ -1,28 +1,13 @@
-CLASS zcl_17_bp_4263 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_17_BP_4263 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-   INTERFACES zif_07_company_4263.
-
-   aliases set_company_type for zif_07_company_4263~set_company_type.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_17_BP_4263 IMPLEMENTATION.
-
-
-  METHOD set_company_type.
-
-  ENDMETHOD.
-
-
-  METHOD zif_06_group_4362~set_gruop.
-
-  ENDMETHOD.
 ENDCLASS.

@@ -1,20 +1,13 @@
-CLASS zcl_07_animal_4362 DEFINITION
-  PUBLIC
+class ZCL_07_ANIMAL_4362 definition
+  public
+  create private .
 
-  CREATE PUBLIC .
-
-  PUBLIC SECTION.
-  METHODS walk  RETURNING VALUE(rv_walk) type string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_07_ANIMAL_4362 IMPLEMENTATION.
-
-
-  METHOD walk.
-    rv_walk = 'Animal walk'.
-  ENDMETHOD.
 ENDCLASS.

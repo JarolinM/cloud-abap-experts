@@ -1,29 +1,13 @@
-CLASS zcl_03_employee_4362 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_03_EMPLOYEE_4362 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS constructor IMPORTING VALUE(iv_employe_id) TYPE string.
-
-    METHODS get_employee_id RETURNING VALUE(rv_employe_id) TYPE string.
-
-  PROTECTED SECTION.
-    DATA employe_id TYPE string.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_03_EMPLOYEE_4362 IMPLEMENTATION.
-
-
-  METHOD constructor.
-    me->employe_id = iv_employe_id.
-  ENDMETHOD.
-
-
-  METHOD get_employee_id.
-    rv_employe_id = me->employe_id.
-  ENDMETHOD.
 ENDCLASS.

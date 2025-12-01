@@ -1,25 +1,13 @@
-CLASS zcl_10_citizen_eu_4263 DEFINITION INHERITING FROM zcl_09_citizen_4263
-  PUBLIC
-    "Si la clase  tiene FINAL esta clase no permite la herencia
-  FINAL
-  CREATE PUBLIC .
+class ZCL_10_CITIZEN_EU_4263 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-   METHODS set_id REDEFINITION.
-
-   "Metodo con final no se puede redefinir.
-   "methods set_name REDEFINITION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_10_CITIZEN_EU_4263 IMPLEMENTATION.
-
-
-  METHOD set_id.
-
-  ENDMETHOD.
 ENDCLASS.

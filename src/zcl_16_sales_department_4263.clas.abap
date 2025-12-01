@@ -1,25 +1,13 @@
-CLASS zcl_16_sales_department_4263 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_16_SALES_DEPARTMENT_4263 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-   INTERFACES zif_05_sales_order_4362.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_16_SALES_DEPARTMENT_4263 IMPLEMENTATION.
-
-
-  METHOD zif_05_sales_order_4362~create_order.
-
-  ENDMETHOD.
-
-
-  METHOD zif_04_document_4362~set_sales_doc.
-
-  ENDMETHOD.
 ENDCLASS.

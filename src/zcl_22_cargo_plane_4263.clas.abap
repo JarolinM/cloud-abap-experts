@@ -1,20 +1,13 @@
-CLASS zcl_22_cargo_plane_4263 DEFINITION
-INHERITING FROM zcl_21_airplane_4263
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_22_CARGO_PLANE_4263 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS: airplane_type REDEFINITION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_22_cargo_plane_4263 IMPLEMENTATION.
-  METHOD airplane_type.
-    rv_airplane_type = 'Cargo Plane'.
-  ENDMETHOD.
-
+CLASS ZCL_22_CARGO_PLANE_4263 IMPLEMENTATION.
 ENDCLASS.

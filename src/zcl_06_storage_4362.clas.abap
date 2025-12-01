@@ -1,11 +1,10 @@
-CLASS zcl_06_storage_4362 DEFINITION INHERITING FROM zcl_05_plant_4362
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_06_STORAGE_4362 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

@@ -1,30 +1,13 @@
-CLASS zcl_lab_04_person_4362 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_04_PERSON_4362 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS set_age importing iv_age type i.
-
-    METHODS get_age RETURNING VALUE(rv_age) type i.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-
-  data age type i.
-
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_LAB_04_PERSON_4362 IMPLEMENTATION.
-
-
-  METHOD get_age.
-    rv_age = age.
-  ENDMETHOD.
-
-
-  METHOD set_age.
-    me->age = iv_age.
-  ENDMETHOD.
 ENDCLASS.

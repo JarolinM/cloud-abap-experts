@@ -1,6 +1,4 @@
-INTERFACE zif_02_eu_unit_4362
-  PUBLIC .
+interface ZIF_02_EU_UNIT_4362
+  public .
 
-  METHODS dimension_centimeters returning VALUE(rv_unit) type zfloat.
-
-ENDINTERFACE.
+endinterface.

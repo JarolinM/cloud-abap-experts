@@ -1,25 +1,13 @@
-CLASS zcl_lab_07_student_4263 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_07_STUDENT_4263 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-   data birth_date type zdate READ-ONLY.
-
-   METHODS set_birth_date IMPORTING iv_birth_date type zdate
-                          RETURNING VALUE(rv_birth_date) type zdate.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_LAB_07_STUDENT_4263 IMPLEMENTATION.
-
-
-  METHOD set_birth_date.
-    birth_date = iv_birth_date.
-    rv_birth_date = birth_date.
-  ENDMETHOD.
 ENDCLASS.

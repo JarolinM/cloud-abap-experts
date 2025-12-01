@@ -1,7 +1,4 @@
-INTERFACE zif_05_sales_order_4362
-  PUBLIC .
-    interfaces zif_04_document_4362.
+interface ZIF_05_SALES_ORDER_4362
+  public .
 
-    METHODS create_order importing iv_order_id type string.
-
-ENDINTERFACE.
+endinterface.

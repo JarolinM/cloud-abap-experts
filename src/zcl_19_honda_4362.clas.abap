@@ -1,12 +1,10 @@
-CLASS zcl_19_honda_4362 DEFINITION ABSTRACT INHERITING FROM zcl_18_moto_4263
-  PUBLIC
-  "FINAL
-  CREATE PUBLIC .
+class ZCL_19_HONDA_4362 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-   METHODS set_model ABSTRACT EXPORTING model type string.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

@@ -1,11 +1,10 @@
-CLASS zcl_13_newyork_4263 DEFINITION INHERITING FROM zcl_11_citizen_4263
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_13_NEWYORK_4263 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

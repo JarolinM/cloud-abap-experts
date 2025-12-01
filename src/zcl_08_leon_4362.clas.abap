@@ -1,20 +1,13 @@
-CLASS zcl_08_leon_4362 DEFINITION INHERITING FROM zcl_07_animal_4362
-  PUBLIC
+class ZCL_08_LEON_4362 definition
+  public
+  create private .
 
-  CREATE PUBLIC .
-
-  PUBLIC SECTION.
-   METHODS walk REDEFINITION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_08_LEON_4362 IMPLEMENTATION.
-
-
-  METHOD walk.
-    rv_walk = 'Lion walks'.
-  ENDMETHOD.
 ENDCLASS.

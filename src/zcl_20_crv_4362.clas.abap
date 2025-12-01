@@ -1,28 +1,13 @@
-CLASS zcl_20_crv_4362 DEFINITION INHERITING FROM zcl_19_honda_4362
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_20_CRV_4362 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-  PROTECTED SECTION.
-    METHODS set_model REDEFINITION.
-    METHODS set_max_speed REDEFINITION.
-
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_20_CRV_4362 IMPLEMENTATION.
-
-
-  METHOD set_max_speed.
-
-  ENDMETHOD.
-
-
-  METHOD set_model.
-
-  ENDMETHOD.
 ENDCLASS.
